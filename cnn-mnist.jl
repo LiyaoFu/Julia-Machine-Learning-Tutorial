@@ -188,7 +188,7 @@ function main()
     global test_set = device.(test_set)
     model = device(model)
 
-    println("Accuracy before training: $(accuracy(test_set...))")
+    println("Accuracy before training: $(evaluate(test_set...))")
     # Training
     plotx, ploty, mark = train()
     # Plotting
